@@ -8,6 +8,8 @@ struct  Node
     Node * prev;
 
     Node(int val):val(val), next(nullptr), prev(nullptr){};
+    Node (Node & other){};
+    Node operator=(Node & other){};
     Node()=default;
     
 };
@@ -22,9 +24,10 @@ class Deque{
         Node* first;
         Node* last;
 
-        Deque(): first(nullptr), last(nullptr){
+        Deque(): first(nullptr), last(nullptr){};
 
-        };
+        Deque (const Deque& d){};
+        Deque operator=( const Deque& other){};
 
         int front();
         int back();
