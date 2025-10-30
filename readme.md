@@ -2,7 +2,7 @@
 
 The goal of this repository is to reimplement some of the stl algorithm and data structure
 
-# Todo 1
+### Todo 1
 - [ ] Vector
 - [ ] Deque
 - [ ] Hashmap
@@ -11,7 +11,7 @@ The goal of this repository is to reimplement some of the stl algorithm and data
 - [ ] Sort algorithm (fusion, merge, etc)
 - [ ] Splay Tree
 
-# Todo 2
+### Todo 2
 - [ ] Priority queue
 - [ ] Avl
 - [ ] Red-Black Tree
@@ -20,7 +20,7 @@ The goal of this repository is to reimplement some of the stl algorithm and data
 - [ ] Bloomfilter
 - [ ] Allocator
 
-# Todo 3
+### Todo 3
 - [ ] CSV Parser
 - [ ] Json Parser
 - [ ] Parser FIX 
@@ -28,7 +28,7 @@ The goal of this repository is to reimplement some of the stl algorithm and data
 - [ ] Trie
 - [ ] Kalman filter
 
-# Todo 4
+### Todo 4
 - [ ] Basic database (in-memory ?)
 - [ ] Garbage collector
 - [ ] Linear regression
