@@ -3,7 +3,7 @@
 
 int main(){
 
-    My_vector vector(5);
+    My_vector<int> vector(5);
     
     std::cout << "Size of vector after init: "<< vector.getzise() <<'\n';
 
@@ -41,4 +41,4 @@ int main(){
 
     return 0;
 
-}
+};

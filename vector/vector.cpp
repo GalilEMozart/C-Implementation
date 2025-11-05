@@ -3,8 +3,8 @@
 #include <iostream>
 #include "vector.hpp"
 
-
-void My_vector::push_back(int element){
+template<typename T>
+void My_vector<T>::push_back(T element){
     
     if(this->counter < this->size){
     
@@ -14,7 +14,7 @@ void My_vector::push_back(int element){
 
     else{
 
-        int* new_static_array = new int[this->size*2];
+        T* new_static_array = new T[this->size*2];
         
         int i;
         for(i=0;i<this->size;i++){
@@ -34,7 +34,8 @@ void My_vector::push_back(int element){
 
 };
 
-int My_vector::pop_back(){
+template <typename T>
+T My_vector<T>::pop_back(){
 
     if(!this->size){
         throw std::invalid_argument("The vector is empty.");
@@ -45,7 +46,8 @@ int My_vector::pop_back(){
 
 };
 
-int My_vector::operator[](int index){
+template <typename T>
+T My_vector<T>::operator[](int index){
     
     if(!this->size){
         throw std::invalid_argument("The vector is empty.");
@@ -54,6 +56,8 @@ int My_vector::operator[](int index){
         throw std::invalid_argument("The index is out of range the vector size.");
     }
     return this->static_array[index];
-}
+};
+
+template class My_vector<int>;
 
 

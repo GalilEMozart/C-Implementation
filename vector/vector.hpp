@@ -1,21 +1,22 @@
 #ifndef MY_VECTOR
 #define MY_VECTOR
 
-//#include <cstddef>
+#include <cstddef>
 
+template <typename T>
 class My_vector{
 
     private:
         
         size_t size;
-        int* static_array;
+        T* static_array;
         size_t counter=0;
 
     public:
 
-        My_vector(): size(1),static_array(new int[size]){};
+        My_vector(): size(1),static_array(new T[size]){};
         My_vector(size_t size):size(size){
-            static_array = new int[size];
+            static_array = new T[size];
         };
         
         ~My_vector(){
@@ -26,10 +27,11 @@ class My_vector{
             return  this->size;
         }
 
-        void push_back(int element);
-        int pop_back();
-        int operator[](int index);
+        void push_back(T element);
+        T pop_back();
+        T operator[](int index);
 
     };
 
 #endif
+
